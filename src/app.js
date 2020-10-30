@@ -16,8 +16,6 @@ app.get("/repositories", (request, response) => {
 
 app.post("/repositories", (request, response) => {
   const { title, url, techs } = request.body;
-  //const listTechs =[];
-  //repositories.techs = listTechs.push(techs);
 
   const repository = {
     id: uuid(),
